@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #fff//2B3036;
+    background-color: #2B3036;
 }
 
 .main-content{
@@ -22,5 +22,29 @@ li{
     width: 80%;
     img{
         margin-right: 5px;
+    }
+}
+
+.elements-container{
+    width:30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.element{
+
+    text-align:center;
+
+    .data{
+        width: 100px;
+        height: 100px;
+        background-color: hsl(150, 100%, 18%);
+        font-size: 20px;
+        padding-top:35px;
+    }
+
+    img{
+        width: 60px;
     }
 }

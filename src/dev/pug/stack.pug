@@ -1,0 +1,27 @@
+extends templates/base
+
+block header 
+    include templates/header
+block main
+    .container.bg-dark.w-50.mt-2.py-3
+        .row.justify-content-center
+            .col-3
+                button.btn.btn-primary.d-block.w-100.mb-2 Push
+                input(type="number").d-block.w-100
+            .col-3
+                button.btn.btn-primary.d-block.w-100 Pop
+            .col-3
+                button.btn.btn-primary.d-block.w-100 Peek
+    .container.elements-container.py-5
+        .element
+            .data.text-light.rounded-circle 1
+            .arrow
+                img(src="resources/svg/down-arrow.svg")
+        .element
+            .data.text-light.rounded-circle 2
+            .arrow
+                img(src="resources/svg/down-arrow.svg")
+        .element
+            .data.text-light.rounded-circle 3
+            .arrow
+                img(src="resources/svg/down-arrow.svg")
