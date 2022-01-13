@@ -1,0 +1,28 @@
+extends templates/base
+
+block header 
+    include templates/header
+block main
+    .container.bg-dark.w-50.mt-2.py-3.mb-5
+        .row.justify-content-center
+            .col-3
+                button.btn.btn-primary.d-block.w-100.mb-2#btn-queue Queue
+                input(type="number" min="1" max="9999").d-block.w-100#txt
+            .col-3
+                button.btn.btn-primary.d-block.w-100#btn-enqueue Enqueue
+            .col-3
+                button.btn.btn-primary.d-block.w-100#btn-peek Peek
+    .container.elements-container.linear.py-5#elements-container
+        .element.d-flex
+            .data.rounded-circle 1
+        .element.d-flex
+            .arrow-left
+                img(src="resources/svg/down-arrow.svg").right
+            .data.rounded-circle 2
+        .element.d-flex
+            .arrow-left
+                img(src="resources/svg/down-arrow.svg").right
+            .data.rounded-circle 3
+           
+    script(src="js/validations.js")
+    script(src="js/queue.js")
