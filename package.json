@@ -19,15 +19,15 @@
   "homepage": "https://github.com/CarloSalas741/DataStructApp#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/register": "^7.16.7",
-    "cssnano": "^5.0.14",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9",
+    "cssnano": "^5.0.15",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "postcss": "^8.4.5",
-    "sass": "^1.45.2"
+    "sass": "^1.47.0"
   }
 }
