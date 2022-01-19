@@ -12,6 +12,7 @@ const addNode = () =>{
         AddAnimation(container);
 
     }else{
+        errorMessage("data field is required");
         txtData.classList.add("isEmpty");
         setTimeout(() =>{
             txt.classList.remove("isEmpty");

@@ -240,16 +240,6 @@ var inputHighlight = function inputHighlight(inputElement) {
   return;
 };
 
-var errorMessage = function errorMessage(textMessage) {
-  error = document.querySelector(".error-block");
-  error.classList.remove("invisible");
-  message = document.querySelector(".error-message");
-  message.textContent = textMessage;
-  setTimeout(function () {
-    error.classList.add("invisible");
-  }, 5000);
-};
-
 btnAppend.addEventListener('click', appendNode);
 btnInsert.addEventListener('click', insertNode);
 btnRemove.addEventListener('click', removeNode);
