@@ -9,8 +9,14 @@ var addNode = function addNode() {
 
   if (!isEmpty(txtData.value)) {
     container.innerHTML += createElement(txtData.value);
+
+    if (containerLength == 0) {
+      container.firstElementChild.firstElementChild.remove();
+    }
+
     AddAnimation(container);
   } else {
+    errorMessage("data field is required");
     txtData.classList.add("isEmpty");
     setTimeout(function () {
       txt.classList.remove("isEmpty");

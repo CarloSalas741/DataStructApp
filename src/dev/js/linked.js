@@ -194,11 +194,11 @@ const highlightNode = element =>{
     nodeEl.animate(
         [
             {backgroundColor: "#00c261"},
-            {backgroundColor: "red"}
+            {backgroundColor: "#da4453"}
         ],
         {
             duration: 1000,
-            iterations: 2
+            fill: "forwards"
         }
     );
 }
@@ -221,15 +221,6 @@ const inputHighlight = inputElement =>{
         inputElement.classList.remove("isEmpty");
     },1000);
     return;
-}
-
-const errorMessage = textMessage =>{
-    error = document.querySelector(".error-block");
-    error.classList.remove("invisible");
-    message = document.querySelector(".error-message");
-    message.textContent = textMessage;
-
-    setTimeout(() =>{error.classList.add("invisible") },5000);
 }
 
 btnAppend.addEventListener('click', appendNode);

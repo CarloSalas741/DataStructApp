@@ -9,9 +9,13 @@ const addNode = () =>{
     let txtData = document.getElementById("txt");
     if(!isEmpty(txtData.value)){
         container.innerHTML += createElement(txtData.value);
+        if(containerLength == 0){
+            container.firstElementChild.firstElementChild.remove();
+        }
         AddAnimation(container);
 
     }else{
+        errorMessage("data field is required");
         txtData.classList.add("isEmpty");
         setTimeout(() =>{
             txt.classList.remove("isEmpty");

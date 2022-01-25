@@ -3,7 +3,7 @@ extends templates/base
 block header 
     include templates/header
 block main
-    .container.bg-dark.w-50.mt-2.py-3.mb-5
+    .container.panel.mt-2.py-3.mb-5
         .row.justify-content-center
             .col-3
                 button.btn.btn-primary.d-block.w-100.mb-2#btn-append Append
@@ -12,7 +12,7 @@ block main
                 button.btn.btn-primary.d-block.w-100.mb-2#btn-insert Insert
                 input(type="number" min="0" max="9999" placeholder="index here").d-block.w-100#txt-index
             .col-3
-                button.btn.btn-primary.d-block.w-100.mb-2#btn-remove Remove
+                button.btn.btn-danger.d-block.w-100.mb-2#btn-remove Remove
                 .radio-opt
                     p.text-light Remove by: 
                     input(type="radio" name="remove" id="data")

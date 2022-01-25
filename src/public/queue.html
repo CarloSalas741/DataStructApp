@@ -9,38 +9,39 @@
     <title>DataStructApp</title>
   </head>
   <body>
-    <header class="main-header bg-dark">
+    <header class="main-header">
       <div class="force overflow">
-        <div class="container pt-3">
-          <div class="img-container text-center"><img src="resources/begin.png"></div>
-          <hr>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-dark"></nav>
         <div class="flex-column"></div>
         <ul class="navbar-nav navbar-collapse flex-column">
-          <li class="nav-item mb-2"><a class="nav-link text-light" href="index.html"><img src="resources/svg/stack.svg">Begin</a>
+          <li class="nav-item mb-2"><a class="nav-link text-light" href="index.html"><img src="resources/svg/dashboard.svg">Begin</a>
           </li>
-          <li class="nav-item mb-2"><a class="nav-link text-light" href="stack.html"><img src="resources/svg/stack.svg">Stack</a>
+          <li class="nav-item mb-2"><a class="nav-link text-light" href="stack.html"><img src="resources/svg/Stack.svg">Stack</a>
           </li>
-          <li class="nav-item mb-2"><a class="nav-link text-light" href="queue.html"><img src="resources/svg/stack.svg">Queue</a>
+          <li class="nav-item mb-2"><a class="nav-link text-light" href="queue.html"><img src="resources/svg/Queue.svg">Queue</a>
           </li>
-          <li class="nav-item mb-2"><a class="nav-link text-light" href="linkedlist.html"><img src="resources/svg/stack.svg">Linked list</a>
+          <li class="nav-item mb-2"><a class="nav-link text-light" href="linkedlist.html"><img src="resources/svg/Linkedlist.svg">Linked list</a>
           </li>
         </ul>
       </div>
     </header>
     <main class="main-content">
-      <div class="container bg-dark w-50 mt-2 py-3 mb-5">
-        <div class="row justify-content-center">
+      <div class="container panel mt-2 py-3 mb-5">
+        <div class="row justify-content-center mb-2">
           <div class="col-3">
             <button class="btn btn-primary d-block w-100 mb-2" id="btn-queue">Queue</button>
-            <input class="d-block w-100" type="number" min="1" max="9999" id="txt">
+            <input class="d-block w-100" type="number" min="1" max="9999" placeholder="data here" id="txt">
           </div>
           <div class="col-3">
-            <button class="btn btn-primary d-block w-100" id="btn-enqueue">Enqueue</button>
+            <button class="btn btn-primary d-block w-100 mb-2" id="btn-peek">Peek</button>
           </div>
           <div class="col-3">
-            <button class="btn btn-primary d-block w-100" id="btn-peek">Peek</button>
+            <button class="btn btn-danger d-block w-100 mb-2" id="btn-enqueue">Enqueue</button>
+          </div>
+        </div>
+        <div class="row justify-content-center error-block invisible">
+          <div class="col-6"><img class="error-icon" src="resources/svg/exclamation.svg">
+            <p class="text-align-center d-inline-block error-message">here for validations</p>
           </div>
         </div>
       </div>

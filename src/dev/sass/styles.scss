@@ -1,7 +1,9 @@
 @import "base/base";
+@import "base/variables";
 
 .main-header{
-    width: 200px;
+    background-color: #272B30;
+    width: 220px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -10,6 +12,18 @@
 
 .main-content{
     margin-left: 250px;
+
+    .card{
+        color: white;
+        background-color: #444C55;
+    }
+
+
+}
+
+.panel{
+    background-color: #272B30;
+    width: 800px;
 }
 
 .elements-container{
@@ -59,12 +73,27 @@
     height: 20px;
 }
 
-
-
 .error-message{
     color: #da4453;
     position: relative;
     top: 2px;
+}
+
+
+.btn-primary{
+    background-color: $green;
+    border-color: $green;
+
+    &:hover{
+        border-color: $dark-green;
+        background-color: $dark-green;
+    }
+
+    &:focus{
+        border-color: $dark-green;
+        background-color: $dark-green;
+        box-shadow: 0 0 0 0.25rem $light-green;
+    }
 }
 
 
@@ -77,4 +106,3 @@
     box-shadow: 0px 0px 0px 3px #da4453;//rgba(255,0,0,0.75);
     border: none;
 }
-

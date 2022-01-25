@@ -24,6 +24,7 @@ var addNode = function addNode() {
       AddAnimation(container);
     }, containerLength > 0 ? 800 : 0);
   } else {
+    errorMessage("data field is required");
     txtData.classList.add("isEmpty");
     setTimeout(function () {
       txt.classList.remove("isEmpty");
