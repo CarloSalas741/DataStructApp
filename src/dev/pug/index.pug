@@ -1,6 +1,33 @@
 extends templates/base
-
+append config 
+    -icon = "aaaxd"
+    -page = "aaaaaa"
 block header
     include templates/header
 block main
-    h1 Titulo
+    .container.d-flex.justify-content-around.py-5
+        .card(style='width: 20rem;')
+            img.card-img-top(src='resources/stack.png' alt='Card image cap')
+            .card-body
+                h3.card-title.text-center Stack
+                //- p.card-text
+                //- | A stack is an abstract data type that holds an ordered, linear sequence of items. In contrast to a queue, a stack is a last in, first out (LIFO) structure; the last element to be added to the stack will be the first element to be removed from the stack.
+                a.btn.btn-primary.w-100.my-2(href='stack.html') Go
+        .card(style='width: 20rem;')
+            img.card-img-top(src='resources/queue.png' alt='Card image cap')
+            .card-body
+                h3.card-title.text-center Queue
+                //- p.card-text
+                //- | A queue is an abstract data type that holds an ordered, linear sequence of items. You can describe it as a first in, first out (FIFO) structure; the first element to be added to the queue will be the first element to be removed from the queue.
+                a.btn.btn-primary.w-100.my-2(href='queue.html') Go
+        .card(style='width: 20rem;')
+            img.card-img-top(src='resources/linkedlist.png' alt='Card image cap')
+            .card-body
+                h3.card-title.text-center Linked List
+                //- p.card-text
+                //- | A linked list is a dynamic data structure, which means that the size of the list can change at run time. You can imagine a linked list as a chain where each link is connected to the next one to form a sequence with a start and an end.
+                a.btn.btn-primary.w-100.my-2(href='linkedlist.html') Go
+
+
+
+

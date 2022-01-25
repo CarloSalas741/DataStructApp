@@ -194,11 +194,11 @@ const highlightNode = element =>{
     nodeEl.animate(
         [
             {backgroundColor: "#00c261"},
-            {backgroundColor: "red"}
+            {backgroundColor: "#da4453"}
         ],
         {
             duration: 1000,
-            iterations: 2
+            fill: "forwards"
         }
     );
 }

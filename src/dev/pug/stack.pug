@@ -3,29 +3,21 @@ extends templates/base
 block header 
     include templates/header
 block main
-    .container.bg-dark.w-50.mt-2.py-3
+    .container.panel.mt-2.py-3
         .row.justify-content-center.mb-2
             .col-3
                 button.btn.btn-primary.d-block.w-100.mb-2#btn-push Push
-                input(type="number" min="1" max="9999").d-block.w-100#txt
-            .col-3
-                button.btn.btn-primary.d-block.w-100#btn-pop Pop
+                input(type="number" min="1" max="9999" placeholder="data here").d-block.w-100#txt
             .col-3
                 button.btn.btn-primary.d-block.w-100#btn-peek Peek
+            .col-3
+                button.btn.btn-danger.d-block.w-100#btn-pop Pop
         .row.justify-content-center.error-block.invisible
             .col-6
                 include templates/errormessage
     .container.elements-container.flex-center.vertically.py-5#elements-container
         .element
             .data.rounded-circle 1
-            .arrow
-                img(src="resources/svg/down-arrow.svg")
-        .element
-            .data.rounded-circle 2
-            .arrow
-                img(src="resources/svg/down-arrow.svg")
-        .element
-            .data.rounded-circle 3
             .arrow
                 img(src="resources/svg/down-arrow.svg")
 
